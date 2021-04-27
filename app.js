@@ -13,14 +13,14 @@ app.use('/api/link', require('./routes/link.routes'))
 app.use('/t', require('./routes/redirect.routes'))
 
 if(process.env.NODE_ENV === 'production') {
-    app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+    app.use(express.static('client/build'))
 
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
     })
 }
 
-const PORT = config.get('port') || process.env.PORT
+const PORT = process.env.PORT || config.get('port') || 5001
 
 async function start () {
     try {
