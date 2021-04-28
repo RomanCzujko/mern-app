@@ -1,6 +1,7 @@
 const express = require('express')
 const config = require('config')
 const mongoose = require('mongoose')
+const path = require('path')
 
 const app = express()
 
@@ -20,7 +21,7 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-const PORT = process.env.PORT || config.get('port') || 5001
+const PORT = config.get('port') || 5001
 
 async function start () {
     try {
