@@ -14,9 +14,25 @@ export const Navbar = () => {
 
   return (
     <nav>
+      {/* <ul id="slide-out" className="sidenav" >
+          <li>
+          <NavLink to='/create'>Create Links</NavLink>
+          </li>
+          <li>
+            <NavLink to='/links'>Manage Links</NavLink>
+          </li>
+          <li>
+            <a href='/' onClick={logoutHandler}>
+              Logout
+            </a>
+          </li>
+      </ul>
+      <a href="#" data-target="slide-out" className="sidenav-trigger">
+      <i className="material-icons" >menu</i></a> */}
+
       <div className='nav-wrapper blue darken-1'>
-        <span className='brand-logo'>
-          Links Shorten
+        <span className='brand-logo' style={{'paddingLeft':'5%'}}>
+          LinkShortener
         </span>
         <ul id='nav-mobile' className='right hide-on-med-and-down' >
           <li>
@@ -32,6 +48,7 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
+        
     </nav>
   );
 };

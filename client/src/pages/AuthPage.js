@@ -41,7 +41,7 @@ export const AuthPage = () => {
 
   return (
     <div className='row'>
-      <div className='col s6 offset-s3'>
+      <div className='col s6 offset-s3' style={{'width':'100%', 'marginLeft': 0}}>
         <h1 style={{'fontSize':'30px', 'fontWeight':800, 'textAlign': 'center'}}>Shorten your Links</h1>
         <div className='card blue darken-1'>
           <div className='card-content white-text'>

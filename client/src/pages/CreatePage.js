@@ -28,7 +28,7 @@ export const CreatePage = () => {
     return (
         <div className="row">
             <div 
-            className="col s8 offset-s2" style={{paddingTop:'2rem'}}
+            className="col s8 offset-s2" style={{paddingTop:'2rem', 'width':'100%', 'marginLeft': 0}}
             >
                  <div className="input-field">
                 <input 
@@ -39,7 +39,7 @@ export const CreatePage = () => {
                   onChange={e => setLink(e.target.value)}
                   onKeyPress={pressHandler} 
                 />
-                <label htmlFor="link">Change your Link/URL</label>
+                <label htmlFor="link">If your Link/URL is long you can shorten it!</label>
               </div>
             </div>
         </div>
